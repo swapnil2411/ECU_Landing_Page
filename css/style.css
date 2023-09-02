@@ -1,0 +1,535 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica_Light';
+    src: url('../font/Helvetica-Light.woff2') format('woff2'),
+        url('../font/Helvetica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica.woff2') format('woff2'),
+        url('../font/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica_Bold';
+    src: url('../font/Helvetica-Bold.woff2') format('woff2'),
+        url('../font/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdobeHeitiStd';
+    src: url('../font/AdobeHeitiStd-Regular-Alphabetic.woff2') format('woff2'),
+        url('../font/AdobeHeitiStd-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.content_container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* LOGO css */
+.logo_relative{
+    position: relative;
+}
+.logo_area{
+    position: absolute;
+    right: 30px;
+    height: 80px;
+    width: 140px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Home Page Banner CSS */
+.home_banner_area{
+    height: 100vh;
+    position: relative;
+}
+
+.home_banner_area .banner_img{
+    width: 100vw;
+    height: 95vh;
+}
+
+.home_banner_area .home_banner_flex{
+    display: flex;
+    margin-top: -70vh;
+}
+
+.home_banner_area .home_banner_flex .banner_content{
+    flex: 0 0 100%;
+    max-width: calc(100% - 500px);
+}
+
+
+.home_banner_area .home_banner_flex .banner_content .banner_title{
+    font-size: 60px;
+    font-family: 'Helvetica_Bold';
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.home_banner_area .home_banner_flex .banner_content .banner_sub_title{
+    font-size: 29px;
+    font-family: 'Helvetica_Bold';
+    color: #fff;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form{
+    flex: 0 0 500px;
+    max-width: 500px;
+    background: #fddd00;
+    border-radius: 10px;
+    padding: 40px 25px;
+    /* font-family: AdobeHeitiStd; */
+    font-family: Helvetica;
+    box-shadow: 1px 1px 30px #2a2a2a;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .title{
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element{
+    flex: 0 0 50%;
+    max-width: calc(50% - 8px);
+    margin-bottom: 15px;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element.extra_msg_input{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .form_input{
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    color: #2a2a2a;
+    padding: 0 10px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    box-shadow: none;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .form_input::placeholder{
+    color: #999;
+    font-size: 12px;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select>.dropdown-toggle{
+    height: 40px;
+    background: #fff;
+    border-radius: 40px;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select>.dropdown-toggle:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select .dropdown-toggle .filter-option{
+    display: flex;
+    align-items: center;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+    font-size: 12px;
+    color: #999;
+    font-family: Helvetica;
+}
+
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select .dropdown-menu li a{
+    font-size: 12px;
+    color: #999;
+}
+
+.terms_condition_btn_flex{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.terms_condion_area{
+    display: flex;
+    align-items: self-start;
+    flex: 0 0 100%;
+    max-width: calc(100% - 80px);
+}
+
+.terms_condion_area input{
+    border: 1px solid #fff !important;
+    border-radius: 2px;
+    height: 18px;
+    width: 18px;
+    box-shadow: none;
+    outline: none;
+}
+
+.terms_condion_area label{
+    font-size: 12px;
+    color: #2a2a2a;
+    margin-left: 5px;
+    line-height: 14px;
+}
+
+.terms_condition_btn_flex button{
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    background: #2a2a2a;
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* Service Section CSS */
+.service_offer_section{
+    padding-bottom: 20px;
+}
+
+.service_offer_section .title{
+    font-family: 'Helvetica_Bold';
+    font-size: 40px;
+    color: #12559b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service_offer_section .sub_title{
+    font-family: 'Helvetica_Bold';
+    text-align: center;
+    color: #545454;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.service_offer_section .service_carousel{
+    /* padding: 0 25px; */
+    margin-top: 70px;
+}
+
+
+.service_offer_section .service_carousel .owl-stage-outer { 
+    overflow: visible;
+    }
+
+.service_offer_section .service_carousel .item .service_box{
+    text-align: center;
+    background: #fff;
+    box-shadow: 1px 1px 10px #e6e6e6,
+    -1px -1px 10px #e6e6e6;
+    border-radius: 10px;
+    padding: 25px 15px;
+
+}
+
+.service_offer_section .service_carousel .item .service_box img{
+    width: unset;
+    margin: 0 auto;
+}
+
+.service_offer_section .service_carousel .item .service_box p{
+    font-family: 'Helvetica';
+    color: #545454;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
+.service_offer_section .service_carousel .item .service_box:hover{
+    background: #12559b;
+}
+
+.service_offer_section .service_carousel .item .service_box:hover p{
+    color: #fff;
+}
+
+/* Our Stat Css */
+
+.our_stats{
+    padding: 75px 0 90px;
+}
+
+.our_stats_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our_stats_flex .left_area{
+    flex: 0 0 515px;
+    max-width: 515px;
+    position: relative;
+}
+
+.our_stats_flex .left_area .youtube_btn a{
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 70px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our_stats_flex .left_area .youtube_btn a svg{
+    color: #fff;
+}
+
+.our_stats_flex .right_area{
+    flex: 0 0 100%;
+    max-width: calc(100% - 560px);
+}
+
+.our_stats_flex .right_area .main_stat_area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our_stats_flex .right_area .main_stat_area .stat_box{
+    flex: 0 0 33.33%;
+    max-width: calc(33.33% - 8px);
+}
+
+.our_stats_flex .right_area .main_stat_area .stat_box:nth-child(1),
+.our_stats_flex .right_area .main_stat_area .stat_box:nth-child(2),
+.our_stats_flex .right_area .main_stat_area .stat_box:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.our_stats_flex .right_area .main_stat_area .stat_box h2{
+    font-size: 26px;
+    font-family: 'Helvetica_Bold';
+    color: #12559b;
+    margin-bottom: 20px;
+}
+
+
+.our_stats_flex .right_area .main_stat_area .stat_box {
+    font-family: 'Helvetica';
+    color: #545454;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Footer CSS */
+.footer_area{
+    background: #f2f2f2;
+    padding: 45px 0;
+}
+.footer_relative{
+    position: relative;
+}
+.footer_flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_left{
+    position: absolute;
+    flex: 0 0 455px;
+    max-width: 455px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_left img{
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.footer_left::before{
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: -15px;
+    height: 80px;
+    width: 100px;
+    background: #12559b;
+    border-radius: 8px;
+    transform: skewX(-15deg);
+    z-index: 0;
+}
+
+.footer_left a{
+    background: #12559b;
+    display: block;
+    width: max-content;
+    padding: 30px 20px;
+    border-radius: 8px;
+    font-family: 'Helvetica_Bold';
+    font-size: 22px;
+    color: #fff;
+    transform: skewX(-15deg);
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 2;
+}
+
+.footer_left a span{
+    display: block;
+    transform: skewX(15deg);
+}
+
+.footer_right{
+    flex: 0 0 100%;
+    max-width: calc(100% - 455px);
+    display: flex;
+}
+
+.footer_links_col_one{
+    flex: 0 0 30%;
+    max-width: 30%;
+    border-right: 1px solid #2a2a2a;
+}
+
+.footer_links_col_one ul li{
+    margin-bottom: 8px;
+}
+
+.footer_links_col_one ul li a{
+    color: #12559b;
+    font-family: 'Helvetica_bold';
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer_right .footer_links_col_two{
+    display: flex;
+    padding-left: 30px;
+}
+
+.footer_right .footer_links_col_two .quick_links_col{
+    padding-left: 15px;
+}
+
+.footer_right .footer_links_col_two .quick_links_col h3{
+    font-size: 16px;
+    font-family: 'Helvetica_Bold';
+    color: #12559b;
+    margin-bottom: 15px;
+}
+
+.footer_right .footer_links_col_two .quick_links_col ul li{
+    margin-bottom: 8px;
+}
+
+.footer_right .footer_links_col_two .quick_links_col ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.footer_right .footer_links_col_two .quick_links_col ul li a{
+    color: #2a2a2a;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer_right .footer_links_col_two .quick_links_col ul li a svg{
+    flex: 0 0 24px;
+    max-width: 24px;
+}
+
+.copyright_area{
+    background: #fddd00;
+    padding: 15px 10px;
+    margin-top: 90px;
+}
+
+.copyright_area p{
+    font-size: 12px;
+    color: #12559b;
+    text-align: center;
+    font-family: 'Helvetica';
+}
