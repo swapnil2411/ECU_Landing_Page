@@ -109,18 +109,20 @@ table {
 
 /* Home Page Banner CSS */
 .home_banner_area{
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 }
 
 .home_banner_area .banner_img{
     width: 100vw;
-    height: 95vh;
+    height: 758px;
 }
 
 .home_banner_area .home_banner_flex{
     display: flex;
-    margin-top: -70vh;
+    flex-wrap: wrap;
+    margin-top: -530px;
+    /* margin-top: -38.799vw; */
 }
 
 .home_banner_area .home_banner_flex .banner_content{
@@ -195,6 +197,10 @@ table {
     font-size: 12px;
 }
 
+.home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select{
+    width: 100%;
+}
+
 .home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element .bootstrap-select>.dropdown-toggle{
     height: 40px;
     background: #fff;
@@ -225,6 +231,7 @@ table {
 .terms_condition_btn_flex{
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -234,6 +241,8 @@ table {
     flex: 0 0 100%;
     max-width: calc(100% - 80px);
 }
+
+
 
 .terms_condion_area input{
     border: 1px solid #fff !important;
@@ -267,6 +276,7 @@ table {
 /* Service Section CSS */
 .service_offer_section{
     padding-bottom: 20px;
+    margin-top: 100px;
 }
 
 .service_offer_section .title{
@@ -288,12 +298,19 @@ table {
 .service_offer_section .service_carousel{
     /* padding: 0 25px; */
     margin-top: 70px;
+    position: relative;
 }
 
 
-.service_offer_section .service_carousel .owl-stage-outer { 
+/* .service_offer_section .service_carousel .owl-stage-outer { 
     overflow: visible;
+    } */
+
+    .service_offer_section .service_carousel .item{
+        padding: 10px;
     }
+
+    
 
 .service_offer_section .service_carousel .item .service_box{
     text-align: center;
@@ -326,6 +343,42 @@ table {
     color: #fff;
 }
 
+.service_offer_section .service_carousel .owl-nav{
+    margin-top: 0;
+}
+
+.service_offer_section .service_carousel .owl-nav button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+}
+
+.service_offer_section .service_carousel .owl-nav button.owl-prev{
+    left: -26px;
+}
+
+.service_offer_section .service_carousel .owl-nav button.owl-next{
+    right: -26px;
+}
+
+.service_offer_section .service_carousel .owl-nav button:hover{
+    background: transparent;
+}
+
+.service_offer_section .service_carousel .owl-nav button svg{
+    height: 32px;
+    width: 32px;
+    color: #999;
+}
+
+.service_offer_section .service_carousel .owl-nav button:hover svg{
+    color: #2a2a2a;
+}
+
+
+
 /* Our Stat Css */
 
 .our_stats{
@@ -336,6 +389,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .our_stats_flex .left_area{
@@ -532,4 +586,379 @@ table {
     color: #12559b;
     text-align: center;
     font-family: 'Helvetica';
+}
+
+/* Thank You Page CSS */
+.thankyou_area{
+    height: 100vh;
+    background: url('../images/thankyou_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thankyou_area .logo_relative{
+    height: 80px;
+}
+
+.thankyou_content_area{
+    height: calc(100vh - 122px);
+    /* background: #999; */
+}
+
+.thankyou_content_area .content_container,
+.thankyou_content_area .content_container .thankyou_text{
+    height: 100%;
+}
+
+.thankyou_content_area .content_container .thankyou_text .inner_text_area{
+    max-width: 768px;
+}
+
+.thankyou_content_area .content_container .thankyou_text{
+    display: flex;
+    align-items: center;
+}
+
+.thankyou_content_area .content_container .thankyou_text .inner_text_area h2{
+    font-family: 'Helvetica_Bold';
+    font-size: 50px;
+    color: #fddd00;
+}
+
+.thankyou_content_area .content_container .thankyou_text .inner_text_area p{
+    font-family: 'Helvetica';
+    font-size: 26px;
+    line-height: 36px;
+    color: #fff;
+    margin: 25px 0;
+}
+
+.thankyou_content_area .content_container .thankyou_text .inner_text_area .visit_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    padding: 0;
+    border-radius: 30px;
+    color: #2a2a2a;
+    background: #fddd00;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+
+.thankyou_area .copyright_area{
+    margin-top: 0;
+    background: transparent;
+}
+
+.thankyou_area .copyright_area p{
+    text-align: left;
+    color: #fff;
+}
+
+
+/****************** MEDIA QUERY ******************/
+@media (max-width: 1365px){
+    .home_banner_area .banner_img{
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px){
+    /* .home_banner_area .banner_img{
+        height: unset;
+    }
+
+    .service_offer_section{
+        margin-top: 200px;
+    } */
+
+    .home_banner_area .home_banner_flex .banner_content .banner_title{
+        font-size: 50px;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_sub_title{
+        font-size: 24px;
+    }
+
+    .home_banner_area .home_banner_flex .bookappointment_form .title{
+        font-size: 16px;
+    }
+
+    .service_offer_section .title{
+        font-size: 32px;
+    }
+
+    .service_offer_section .service_carousel .item .service_box p{
+        font-size: 14px;
+    }
+
+    .service_offer_section .sub_title{
+        font-size: 12px;
+    }
+
+    .service_offer_section .service_carousel .owl-nav button{
+        background: #fddd00;
+    }
+
+    .service_offer_section .service_carousel .owl-nav button:hover{
+        background: #12559b;
+    }
+
+    .service_offer_section .service_carousel .owl-nav button:hover svg{
+        color: #fff;
+    }
+
+    .service_offer_section .service_carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
+
+    .service_offer_section .service_carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+
+    .our_stats_flex .left_area{
+        flex: 0 0 415px;
+        max-width: 415px;
+    }
+
+    .our_stats_flex .left_area img{
+        max-width: 100%;
+        display: block;
+    }
+
+    .our_stats_flex .right_area{
+        flex: 0 0 100%;
+        max-width: calc(100% - 460px);
+    }
+
+    .our_stats_flex .right_area .main_stat_area .stat_box h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .our_stats_flex .right_area .main_stat_area .stat_box p{
+        font-size: 12px;
+    }
+
+    .footer_area{
+        padding: 20px 0;
+    }
+
+    .footer_left{
+        flex: 0 0 355px;
+        max-width: 355px;
+        left: 15px;
+    }
+
+    .footer_left::before{
+        left: 25px;
+    }
+
+    .footer_left a{
+        font-size: 18px;
+        padding: 25px 15px;
+    }
+
+    .footer_right{
+        flex: 0 0 100%;
+        max-width: calc(100% - 400px);
+    }
+
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area h2{
+        font-size: 40px;
+    }
+    
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 991px){
+    .home_banner_area .home_banner_flex .banner_content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home_banner_area .home_banner_flex {
+        margin-top: -600px;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_title,
+    .home_banner_area .home_banner_flex .banner_content .banner_sub_title{
+        text-align: center;
+    }
+
+    .home_banner_area .home_banner_flex .bookappointment_form{
+        flex: 0 0 500px;
+        max-width: 500px;
+        margin: 50px auto 0;
+    }
+
+    .our_stats_flex .right_area {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .footer_right .footer_links_col_two{
+        padding-left: 0;
+    }
+
+    .footer_links_col_one{
+        flex: 0 0 40%;
+        max-width: 40%;
+        padding-right: 15px;
+    }
+
+    .footer_right .footer_links_col_two{
+        flex-direction: column;
+    }
+
+    .our_stats_flex .left_area{
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+
+}
+
+@media (max-width: 767px){
+    .footer_flex{
+        flex-direction: column;
+    }
+
+    .footer_left{
+        position: relative;
+        transform: unset;
+        left: 0;
+        margin-top: -75px;
+    }
+
+    .footer_left a{
+        position: relative;
+        bottom: 30px;
+        margin-left: auto;
+    }
+
+    .footer_right{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .our_stats{
+        padding: 75px 0 140px;
+    }
+
+    .our_stats_flex .right_area,
+    .our_stats_flex .left_area {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .our_stats_flex .left_area{
+        margin-bottom: 30px;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_title{
+        font-size: 40px;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_sub_title{
+        font-size: 20px;
+    }
+
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area h2{
+        font-size: 36px;
+    }
+    
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .home_banner_area .home_banner_flex .bookappointment_form{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .service_offer_section .sub_title br{
+        display: none;
+    }
+
+    .our_stats_flex .right_area .main_stat_area .stat_box:nth-child(1), .our_stats_flex .right_area .main_stat_area .stat_box:nth-child(2), .our_stats_flex .right_area .main_stat_area .stat_box:nth-child(3){
+        margin-bottom: unset;
+    }
+
+    
+    .our_stats_flex .right_area .main_stat_area .stat_box{
+        flex: 50%;
+        max-width: calc(50% - 10px);
+        margin-bottom: 25px !important;
+    }
+
+    .home_banner_area .home_banner_flex .bookappointment_form{
+        padding: 30px 15px;
+    }
+
+    .terms_condion_area{
+        margin-bottom: 15px;
+    }
+
+    .terms_condion_area,
+    .terms_condition_btn_flex button{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_title{
+        font-size: 32px;
+    }
+
+    .home_banner_area .home_banner_flex .banner_content .banner_sub_title{
+        font-size: 16px;
+    }
+
+    .service_offer_section .title{
+        font-size: 26px;
+    }
+
+    .our_stats_flex .left_area .youtube_btn a{
+        width: 50px;
+        height: 50px;
+    }
+
+    .our_stats_flex .left_area .youtube_btn a svg{
+        height: 18px;
+        width: 18px;
+    }
+
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area p br{
+        display: none;
+    }
+
+    .thankyou_content_area .content_container .thankyou_text .inner_text_area .visit_btn{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px){
+    .home_banner_area .home_banner_flex .bookappointment_form .help_form .inner_form .form_element{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
