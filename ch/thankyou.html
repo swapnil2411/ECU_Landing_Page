@@ -15,36 +15,48 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <section class="thankyou_area">
         <div class="content_container logo_relative">
+            <div class="lang_converter">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        选择语言
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="/en/index.html">英语</a>
+                      <a class="dropdown-item" href="/ch/index.html">中国人</a>
+                    </div>
+                  </div>
+            </div>
             <div class="logo_area">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="ECU Worldwide" class="img-fluid">
+                    <img src="../images/logo.png" alt="ECU Worldwide" class="img-fluid">
                 </a>
             </div>
         </div>
-        <div class="thankyou_content_area">
+        <div class="thankyou_content_area chinese_thankyou_content_area">
             <div class="content_container">
                 <div class="thankyou_text">
                     <div class="inner_text_area">
-                        <h2 class="title">Thank you for contacting us.</h2>
+                        <h2 class="title">感谢您与我们联系。</h2>
                         <p class="sub_title">
-                            We receive your request and will contact you within two<br />
-                            business days. In the meantime, feel free to browse our website <br />
-                            for more details about our solutions and network.
+                            我们收到您的请求,将在两个工作日 <br />
+                            内与您联系。同时,请随时浏览我们 <br />
+                            的网站,了解有关我们的解决方案和 <br />
+                            网络的更多详细信息。
                         </p>
-                        <a href="#" class="visit_btn" target="_blank">visit our website</a>
+                        <a href="#" class="visit_btn" target="_blank">访问我们的网站</a>
                     </div>
                 </div> 
             </div>
         </div>
         <div class="copyright_area">
             <div class="content_container">
-                <p>&copy; Copyright 2023.ECU- Worldwide. All right reserved. </p>
+                <p>&copy; 版权所有2023年。ECU-Worldwide。保留所有权利</p>
             </div>
         </div>
     </section>
@@ -61,7 +73,7 @@
     <!-- Bootstrap Select -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
     <!-- Custom Js -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>

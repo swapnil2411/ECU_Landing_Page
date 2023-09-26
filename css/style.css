@@ -138,10 +138,19 @@ table {
     color: #fff;
 }
 
+.home_banner_area .home_banner_flex .banner_content .Chinese_banner_title{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
 .home_banner_area .home_banner_flex .banner_content .banner_sub_title{
     font-size: 29px;
     font-family: 'Helvetica_Bold';
     color: #fff;
+}
+
+.home_banner_area .home_banner_flex .banner_content .Chinese_banner_sub_title{
+    font-size: 40px;
 }
 
 .home_banner_area .home_banner_flex .bookappointment_form{
@@ -625,12 +634,20 @@ table {
     color: #fddd00;
 }
 
+.chinese_thankyou_content_area .content_container .thankyou_text .inner_text_area h2{
+    letter-spacing: 1px;
+}
+
 .thankyou_content_area .content_container .thankyou_text .inner_text_area p{
     font-family: 'Helvetica';
     font-size: 26px;
     line-height: 36px;
     color: #fff;
     margin: 25px 0;
+}
+
+.chinese_thankyou_content_area .content_container .thankyou_text .inner_text_area p{
+    letter-spacing: 1px;
 }
 
 .thankyou_content_area .content_container .thankyou_text .inner_text_area .visit_btn{
@@ -657,6 +674,31 @@ table {
 .thankyou_area .copyright_area p{
     text-align: left;
     color: #fff;
+}
+
+.lang_converter{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.lang_converter .dropdown-toggle{
+    background-color: #fddd00;
+    font-family: 'Helvetica';
+    box-shadow: none;
+}
+
+.lang_converter .show .dropdown-toggle{
+    background-color: #fddd00;
+    box-shadow: none;
+}
+
+.dropdown-menu a{
+    font-family: 'Helvetica';
+}
+
+.chinese_footer_col a{
+    letter-spacing: 1px;
 }
 
 
